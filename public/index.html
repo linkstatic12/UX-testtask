@@ -24,14 +24,52 @@
 		<script src="js/vendor/underscore.min.js"></script>
 		<script src="js/tmpl/templates.js"></script>
 		<script>
+
 		var container = $("#container"),
 			blocks = [
-				{
+				{   	
+					tmpl: "container",
+					id: "companyForm",
+					style: "form",
+					customStyle: "formcompany",
+					classes: "container container-fluid col-md-12",
+					blocks: [
+						{
+							tmpl: "label",
+							highlight: "label label-default label-bigger",
+							text: "company Form",
+							id: "lblcompanyForm"
+						},
+						{
+							tmpl: "input",
+							label: "Company Name:",
+							id: "ipCompanyName",
+							inputType: "text",
+							placeholder: "company name"
+						},
+						{
+							tmpl: "input",
+							label: "No of Employees:",
+							id: "ipNoEmployees",
+							inputType: "text",
+							placeholder: "no of employees"
+						},
+						 
+						{
+							tmpl: "button",
+							type: "Button",
+							classes: "btn btn-xs btn-primary",
+							text: "Submit",
+							id: "btnSubmit",
+							name: "btnSubmit"
+						}
+					]
+				},
 					tmpl: "container",
 					id: "personForm",
 					style: "form",
 					customStyle: "formPerson",
-					classes: "container container-fluid",
+					classes: "container container-fluid col-xs-12 col-md-8 col-sm-8",
 					blocks: [
 						{
 							tmpl: "label",
@@ -91,7 +129,7 @@
 					id: "employeeForm",
 					style: "form",
 					customStyle: "formEmployee",
-					classes: "container container-fluid col-md-4",
+					classes: "container container-fluid col-xs-12 col-sm-4 col-md-4",
 					blocks: [
 						{
 							tmpl: "label",

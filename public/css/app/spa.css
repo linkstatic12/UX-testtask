@@ -1,7 +1,9 @@
 .block-dropdown button.dropdown-toggle {
   position: relative;
-  margin-left: 5px;
+  margin-left: 5px !important;
   margin-right: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 .block-dropdown button.dropdown-toggle:before,
 .block-dropdown button.dropdown-toggle:after {
@@ -30,6 +32,10 @@
   -o-transform: rotate(3deg);
   right: 10px;
   left: auto;
+}
+#PersonForm .block-dropdown button.dropdown-toggle:before,
+#PersonForm .block-dropdown button.dropdown-toggle:after {
+  background: #333;
 }
 .label-bigger {
   font-size: 220%;

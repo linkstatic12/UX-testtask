@@ -1,9 +1,10 @@
 .block-dropdown{
-
 	button.dropdown-toggle{
 		position: relative;
-		margin-left: 5px;
+		margin-left: 5px !important;
 		margin-right: 5px;
+		padding-top:3px;
+		padding-bottom:3px;
 		&:before, &:after{
 			z-index: -1;
 			position: absolute;
@@ -26,4 +27,14 @@
 		}
 	}
 
+}
+
+#PersonForm {
+	.block-dropdown{
+		button.dropdown-toggle{
+			&:before, &:after{
+				background:#333;
+			}
+		}
+	}
 }

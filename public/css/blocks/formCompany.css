@@ -1,0 +1,6 @@
+/* formCompany.css */
+
+#companyForm.form >.block-dropdown>.dropdown-toggle{background: blue;}
+label[for="ipCompanyName"] {
+color: red;
+}

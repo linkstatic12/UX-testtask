@@ -3,3 +3,7 @@
 	bottom: 20px;
 	left: 20px;
 }
+#personForm.form >.block-dropdown>.dropdown-toggle{background: blue;}
+label[for="ipName"] {
+color: blue;
+}
